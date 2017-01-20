@@ -1,7 +1,7 @@
 $(function() {
   smoothScroll(400);
   $('#name').fitText(1.2, { minFontSize: '20px', maxFontSize: '68px' });
-
+  $('input').fitText(1.2, { minFontSize: '20px', maxFontSize: '68px' });
 });
 
 // smoothScroll function is applied from the document ready function
