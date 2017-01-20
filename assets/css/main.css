@@ -1120,3 +1120,6 @@ navbar {
               align-items: center; }
             .contact-section .contact-methods .social-networks .social-icons a p {
               display: none; } }
+  @media screen and (max-width: 375px) {
+    .contact-section .contact-methods form input {
+      padding-right: 10px; } }
