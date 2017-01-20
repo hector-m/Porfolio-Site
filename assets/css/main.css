@@ -964,6 +964,8 @@ navbar {
         padding: 10px; }
         .contact-section .contact-methods form input:focus, .contact-section .contact-methods form textarea:focus {
           outline: none; }
+      .contact-section .contact-methods form input {
+        align-items: center; }
       .contact-section .contact-methods form [type="submit"] {
         color: #95989A;
         font-size: 22px;
