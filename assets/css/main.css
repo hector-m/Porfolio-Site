@@ -506,19 +506,78 @@ navbar {
   right: 0;
   top: 0;
   z-index: 99; }
+  navbar * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    navbar *:after, navbar *::before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+  navbar body {
+    font-family: "Raleway", sans-serif; }
   navbar nav {
-    padding: 30px 30px 0 0; }
+    padding-right: 10px; }
     navbar nav a {
+      position: relative;
       display: inline-block;
-      margin-left: 30px;
-      color: #FFFFFF;
-      font-size: 14px;
+      margin: 30px 15px;
+      outline: none;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+      font-size: 12px; }
+      navbar nav a:hover, navbar nav a:focus {
+        outline: none; }
+  navbar .cl-effect-18 {
+    position: relative;
+    z-index: 1; }
+    navbar .cl-effect-18 a {
+      padding: 0 5px;
+      color: white;
       font-weight: 700;
-      text-transform: uppercase; }
-      navbar nav a:hover {
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      transition: color 0.3s; }
+      navbar .cl-effect-18 a::before, navbar .cl-effect-18 a::after {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        height: 2px;
+        margin-top: -1px;
+        background: white;
+        content: "";
+        z-index: -1;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+        pointer-events: none; }
+      navbar .cl-effect-18 a::before {
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        transform: translateY(-20px); }
+      navbar .cl-effect-18 a::after {
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        transform: translateY(20px); }
+      navbar .cl-effect-18 a:hover, navbar .cl-effect-18 a:focus {
         color: #DFBF87; }
-      navbar nav a .active {
-        color: #DFBF87; }
+      navbar .cl-effect-18 a:hover::before, navbar .cl-effect-18 a:hover::after {
+        opacity: 0.7; }
+      navbar .cl-effect-18 a:focus::before, navbar .cl-effect-18 a:focus::after {
+        opacity: 0.7; }
+      navbar .cl-effect-18 a:hover::before, navbar .cl-effect-18 a:focus::before {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      navbar .cl-effect-18 a:hover::after, navbar .cl-effect-18 a:focus::after {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
   navbar html {
     box-sizing: border-box; }
   navbar * {
@@ -978,16 +1037,21 @@ navbar {
       padding-left: 20px; }
       .contact-section .contact-methods form input, .contact-section .contact-methods form textarea {
         background: none;
-        border: 5px solid #DDDAD7;
+        border: 5px solid #777470;
         width: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: 10px; }
         .contact-section .contact-methods form input:focus, .contact-section .contact-methods form textarea:focus {
-          outline: none; }
-      .contact-section .contact-methods form input {
-        align-items: center; }
+          outline: none;
+          border: 5px solid #DDDAD7;
+          transition: 0.3s; }
+      .contact-section .contact-methods form [type="text"], .contact-section .contact-methods form [type="email"] {
+        align-items: center;
+        border: none;
+        border-bottom: 3px solid #777470;
+        border-left: 3px solid #777470; }
       .contact-section .contact-methods form [type="submit"] {
         color: #95989A;
         font-size: 22px;
@@ -995,7 +1059,9 @@ navbar {
         width: 33%;
         padding-top: 0;
         padding-bottom: 0;
-        float: right; }
+        float: right;
+        border: 5px solid #777470;
+        align-items: center; }
       .contact-section .contact-methods form textarea {
         height: 10em; }
       .contact-section .contact-methods form label {
@@ -1139,6 +1205,3 @@ navbar {
               align-items: center; }
             .contact-section .contact-methods .social-networks .social-icons a p {
               display: none; } }
-  @media screen and (max-width: 375px) {
-    .contact-section .contact-methods form input {
-      padding-right: 100px; } }
