@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -413,9 +414,9 @@ header {
     margin-bottom: 0;
     padding-bottom: 0; }
     .about-section .about .description {
+      border: 1px solid red;
       color: #DFBF87;
-      max-width: 340px;
-      font-size: 22px;
+      font-size: 20px;
       text-align: right;
       font-weight: 300;
       position: absolute;
@@ -425,16 +426,20 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-right: 15px; }
+      padding-right: 15px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      z-index: 1; }
+    .about-section .about img {
+      z-index: 0; }
   @media screen and (max-width: 850px) {
     .about-section .about {
       max-width: 100vw; }
       .about-section .about .description {
-        font-size: 22px;
-        max-width: 300px;
+        font-size: 15px;
+        max-width: 500px;
         padding-right: 50px; }
       .about-section .about img {
-        width: 250px;
+        width: 200px;
         height: auto;
         padding-left: 50px; } }
   @media screen and (max-width: 660px) {
@@ -444,8 +449,7 @@ header {
       padding-left: 0; } }
   @media screen and (max-width: 570px) {
     .about-section .about .description {
-      font-size: 20px;
-      max-width: 250px; }
+      font-size: 12px; }
     .about-section .about img {
       width: 200px;
       height: auto; } }
@@ -464,25 +468,28 @@ header {
       width: 60px; }
     .about-section .about {
       padding-top: 25px; }
-      .about-section .about .description {
-        font-size: 20px;
-        max-width: 250px; }
       .about-section .about img {
         width: 175px;
-        height: auto; } }
+        height: auto;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: “FlipH”; } }
   @media screen and (max-width: 380px) {
     .about-section .about .description {
-      font-size: 20px;
-      max-width: 210px; }
+      padding: 5px;
+      margin: 0;
+      max-width: 280px; }
+      .about-section .about .description .brake {
+        display: none; }
     .about-section .about img {
       width: 150px;
       height: auto; } }
   @media screen and (max-width: 340px) {
     .about-section .about {
       padding-bottom: 50px; }
-      .about-section .about .description {
-        font-size: 20px;
-        max-width: 210px; }
       .about-section .about img {
         width: 125px;
         height: auto; } }
