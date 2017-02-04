@@ -280,15 +280,14 @@ body {
 header {
   height: 100vh;
   background-position: center;
-  background-image: url(../img/dot.svg), linear-gradient(140deg, rgba(92, 108, 125, 0.85), rgba(24, 46, 74, 0.65)), url(../img/cover1.jpg);
-  background-size: 3px, cover, cover;
+  background-image: url(../img/dot.svg), linear-gradient(140deg, rgba(92, 108, 125, 0.45), rgba(24, 46, 74, 0.25)), url(../img/cover2.jpg);
+  background-size: 5px, cover, cover;
   color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
-  position: relative; }
+  margin-bottom: 0px; }
   header h1 {
     display: inline-block;
     width: 100%;
@@ -303,7 +302,7 @@ header {
     header h1 span {
       display: inline-block;
       padding: 0.2em 0.5em;
-      border: #D7EFF3 solid 10px; }
+      border: #BE5868 solid 5px; }
   header a img {
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
     margin: 0 auto;
@@ -427,7 +426,9 @@ header {
       justify-content: center;
       padding-right: 15px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-      z-index: 1; }
+      z-index: 1;
+      margin-top: 10px;
+      margin-bottom: 15px; }
     .about-section .about img {
       z-index: 0; }
   @media screen and (max-width: 850px) {
