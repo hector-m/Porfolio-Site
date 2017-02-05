@@ -65,3 +65,12 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	});
+
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+
+  $('#name').css({
+    'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+  });
+
+});
