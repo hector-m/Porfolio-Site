@@ -457,10 +457,17 @@ header {
       padding-left: 0; } }
   @media screen and (max-width: 570px) {
     .about-section .about .description {
-      font-size: 12px; }
+      font-size: 15px;
+      max-width: 100%; }
     .about-section .about img {
-      width: 200px;
-      height: auto; } }
+      width: 175px;
+      height: auto;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: “FlipH”; } }
   @media screen and (max-width: 450px) {
     .about-section .about-icons .icon-math {
       height: 60px;
@@ -475,29 +482,23 @@ header {
       height: 60px;
       width: 60px; }
     .about-section .about {
-      padding-top: 25px; }
-      .about-section .about img {
-        width: 175px;
-        height: auto;
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: “FlipH”; } }
+      padding-top: 25px; } }
   @media screen and (max-width: 414px) {
-    .about-section .about .description {
-      padding: 5px;
-      margin: 0;
-      max-width: 280px;
-      padding-right: 10px; }
-      .about-section .about .description .brake {
-        display: none; }
-    .about-section .about img {
-      width: 150px;
-      height: auto; } }
+    .about-section .about {
+      padding-bottom: 125px; }
+      .about-section .about .description {
+        padding: 5px;
+        margin: 0;
+        max-width: 280px;
+        padding-right: 10px; }
+        .about-section .about .description .brake {
+          display: none; }
+      .about-section .about img {
+        width: 125px;
+        height: auto; } }
   @media screen and (max-width: 340px) {
     .about-section .about {
+      padding-top: 75px;
       padding-bottom: 50px; }
       .about-section .about img {
         width: 125px;
