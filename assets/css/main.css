@@ -918,7 +918,8 @@ navbar {
       padding-right: 75px;
       max-width: 50%; }
     .projects-section .projects img {
-      max-width: 40%; }
+      max-width: 40%;
+      height: auto; }
   @media screen and (max-width: 1240px) {
     .projects-section .projects {
       max-width: 100vw; }
