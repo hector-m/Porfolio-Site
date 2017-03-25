@@ -280,7 +280,7 @@ body {
 header {
   height: 100vh;
   background-position: center;
-  background-image: url(../img/dot.svg), linear-gradient(140deg, rgba(92, 108, 125, 0.45), rgba(24, 46, 74, 0.25)), url(.../assets/img/cover2.jpg);
+  background-image: url(../img/dot.svg), linear-gradient(140deg, rgba(92, 108, 125, 0.45), rgba(24, 46, 74, 0.25)), url(assets/img/john-mark-kuznietsov-174918.jpg);
   background-size: 5px, cover, cover;
   background-attachment: fixed;
   color: #FFF;
